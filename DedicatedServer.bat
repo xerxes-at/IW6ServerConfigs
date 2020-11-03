@@ -13,7 +13,7 @@ set ServerFilename=server.cfg
 
 
 ::///////////////////////////////////////////////////////////////////////
-:://You done!! WARNING!!! Don't mess with anything below this line     //
+:://You're done!! WARNING!!! Don't mess with anything below this line  //
 ::///////////////////////////////////////////////////////////////////////
 
 start iw6x.exe -dedicated +exec %ServerFilename% +map_rotate
