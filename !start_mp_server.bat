@@ -19,8 +19,16 @@ set ServerFilename=server.cfg
 set port=27016
 
 
+:: Either put the batch in the Ghosts install dir, or change the value below to the Ghost install dir
+set XLABS_GHOSTS_INSTALL=%~dp0
+
+:: Remove this line, if automatic updates on start should be disabled
+start /W xlabs.exe -update
+
+
 ::///////////////////////////////////////////////////////////////////////
 :://You're done!! WARNING!!! Don't mess with anything below this line  //
 ::///////////////////////////////////////////////////////////////////////
 
-start iw6x.exe -dedicated +set net_port "%port%" +exec %ServerFilename% +map_rotate
+set GAME_EXE=%localappdata%\xlabs\data\iw6x\iw6x.exe
+start %GAME_EXE% -dedicated +set net_port "%port%" +exec %ServerFilename% +map_rotate

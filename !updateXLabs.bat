@@ -1,2 +1,2 @@
 @echo off
-xlabs.exe -update
+start xlabs.exe -update
